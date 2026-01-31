@@ -21,9 +21,10 @@ class AppButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor ?? AppColors.lightGray,
-        foregroundColor: textColor ?? AppColors.primary,
-        minimumSize: Size(double.infinity, 50),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+        backgroundColor: backgroundColor ?? AppColors.primary,
+        foregroundColor: textColor ?? AppColors.lightGray,
+        minimumSize: Size(300, 60),
         textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
       child: Text(text),
