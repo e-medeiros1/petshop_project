@@ -17,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: AppColors.white,
       body: Stack(
         children: [
-          SizedBox(width: double.infinity, child: Image.asset('assets/images/auth.png')),
+          Image.asset('assets/images/auth.png', fit: BoxFit.fill),
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(

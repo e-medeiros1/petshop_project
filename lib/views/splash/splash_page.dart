@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:petshop_project/theme/colors.dart';
+
 import '../../config/app_routes.dart';
 
 class SplashPage extends StatefulWidget {
@@ -30,7 +31,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primary,
-      body: Center(child: Image.asset('assets/images/splash.png')),
+      body: Center(child: Image.asset('assets/images/splash.png', fit: BoxFit.fitWidth)),
     );
   }
 }
